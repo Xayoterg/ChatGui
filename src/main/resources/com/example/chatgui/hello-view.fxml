@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<HBox prefWidth="400" prefHeight="400" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.chatgui.HelloController">
+<!--    <TextArea fx:id="textAreaContact" disable="false" prefWidth="100" prefHeight="-Infinity"/>-->
+    <VBox prefHeight="-Infinity" prefWidth="150" fx:id="usersListVBox"/>
+    <VBox alignment="CENTER">
+
+        <TextArea editable="false" prefHeight="350.0" prefWidth="300.0" fx:id="textArea"/>
+        <HBox prefHeight="25" prefWidth="300.0">
+            <TextField onAction="#handlerSend" prefWidth="200" fx:id="textField"/>
+            <Button fx:id="senBtn" onAction="#handlerSend" prefWidth="100.0" text="Отправить" disable="true"/>
+
+
+
+
+        </HBox>
+        <Button fx:id="connectBtn" prefHeight="25"  onAction="#connect" prefWidth="Infinity" text="Подключиться"/>
+
+
+    </VBox>
+</HBox>
+
